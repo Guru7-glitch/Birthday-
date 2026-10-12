@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nanba</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #141e30, #6a11cb, #ff4b8b);
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 35px 20px;
+            border-radius: 25px;
+            width: 85%;
+            max-width: 400px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: 35px;
+            text-shadow: 0 0 15px orange;
+        }
+
+        .cake {
+            font-size: 80px;
+            animation: bounce 1.5s infinite;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        button {
+            background: #ffd700;
+            color: #222;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #surprise {
+            display: none;
+            margin-top: 20px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @keyframes bounce {
+            50% { transform: translateY(-15px); }
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            font-size: 35px;
+            animation: float 7s linear infinite;
+        }
+
+        @keyframes float {
+            to { transform: translateY(-120vh) rotate(20deg); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balloon" style="left:10%; animation-delay:0s">🎈</div>
+    <div class="balloon" style="left:80%; animation-delay:2s">🎈</div>
+    <div class="balloon" style="left:45%; animation-delay:4s">🎈</div>
+
+    <div class="card">
+        <div class="cake">🎂</div>
+
+        <h1>Happy Birthday Nanba! 🎉</h1>
+
+        <p>
+            Friendship isn't about how many years,<br>
+            it's about the memories we create! ❤️
+        </p>
+
+        <p>Always Stay Happy, Nanba! 🫂</p>
+
+        <button onclick="showSurprise()">
+            Click for Surprise 🎁
+        </button>
+
+        <div id="surprise">
+            🥳 Love You Da Nanba! ❤️<br>
+            Our Friendship Forever! ♾️
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+            alert("Happy Birthday Nanba! 🎂❤️");
+        }
+    </script>
+
+</body>
+</html><html>
+
+</html>
